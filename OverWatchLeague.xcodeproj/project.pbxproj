@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		796FECCF252684750062DB4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796FECCE252684750062DB4A /* AppDelegate.swift */; };
+		796FECD1252684750062DB4A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796FECD0252684750062DB4A /* SceneDelegate.swift */; };
+		796FECD3252684750062DB4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796FECD2252684750062DB4A /* ViewController.swift */; };
+		796FECD6252684750062DB4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 796FECD4252684750062DB4A /* Main.storyboard */; };
+		796FECD8252684780062DB4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 796FECD7252684780062DB4A /* Assets.xcassets */; };
+		796FECDB252684780062DB4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 796FECD9252684780062DB4A /* LaunchScreen.storyboard */; };
+		796FECE6252684780062DB4A /* OverWatchLeagueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796FECE5252684780062DB4A /* OverWatchLeagueTests.swift */; };
+		796FECF1252684780062DB4A /* OverWatchLeagueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796FECF0252684780062DB4A /* OverWatchLeagueUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		796FECE2252684780062DB4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 796FECC3252684750062DB4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 796FECCA252684750062DB4A;
+			remoteInfo = OverWatchLeague;
+		};
+		796FECED252684780062DB4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 796FECC3252684750062DB4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 796FECCA252684750062DB4A;
+			remoteInfo = OverWatchLeague;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		796FECCB252684750062DB4A /* OverWatchLeague.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OverWatchLeague.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		796FECCE252684750062DB4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		796FECD0252684750062DB4A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		796FECD2252684750062DB4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		796FECD5252684750062DB4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		796FECD7252684780062DB4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		796FECDA252684780062DB4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		796FECDC252684780062DB4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		796FECE1252684780062DB4A /* OverWatchLeagueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OverWatchLeagueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		796FECE5252684780062DB4A /* OverWatchLeagueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverWatchLeagueTests.swift; sourceTree = "<group>"; };
+		796FECE7252684780062DB4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		796FECEC252684780062DB4A /* OverWatchLeagueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OverWatchLeagueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		796FECF0252684780062DB4A /* OverWatchLeagueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverWatchLeagueUITests.swift; sourceTree = "<group>"; };
+		796FECF2252684780062DB4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		796FECC8252684750062DB4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		796FECDE252684780062DB4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		796FECE9252684780062DB4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		796FECC2252684750062DB4A = {
+			isa = PBXGroup;
+			children = (
+				796FECCD252684750062DB4A /* OverWatchLeague */,
+				796FECE4252684780062DB4A /* OverWatchLeagueTests */,
+				796FECEF252684780062DB4A /* OverWatchLeagueUITests */,
+				796FECCC252684750062DB4A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		796FECCC252684750062DB4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				796FECCB252684750062DB4A /* OverWatchLeague.app */,
+				796FECE1252684780062DB4A /* OverWatchLeagueTests.xctest */,
+				796FECEC252684780062DB4A /* OverWatchLeagueUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		796FECCD252684750062DB4A /* OverWatchLeague */ = {
+			isa = PBXGroup;
+			children = (
+				796FECCE252684750062DB4A /* AppDelegate.swift */,
+				796FECD0252684750062DB4A /* SceneDelegate.swift */,
+				796FECD2252684750062DB4A /* ViewController.swift */,
+				796FECD4252684750062DB4A /* Main.storyboard */,
+				796FECD7252684780062DB4A /* Assets.xcassets */,
+				796FECD9252684780062DB4A /* LaunchScreen.storyboard */,
+				796FECDC252684780062DB4A /* Info.plist */,
+			);
+			path = OverWatchLeague;
+			sourceTree = "<group>";
+		};
+		796FECE4252684780062DB4A /* OverWatchLeagueTests */ = {
+			isa = PBXGroup;
+			children = (
+				796FECE5252684780062DB4A /* OverWatchLeagueTests.swift */,
+				796FECE7252684780062DB4A /* Info.plist */,
+			);
+			path = OverWatchLeagueTests;
+			sourceTree = "<group>";
+		};
+		796FECEF252684780062DB4A /* OverWatchLeagueUITests */ = {
+			isa = PBXGroup;
+			children = (
+				796FECF0252684780062DB4A /* OverWatchLeagueUITests.swift */,
+				796FECF2252684780062DB4A /* Info.plist */,
+			);
+			path = OverWatchLeagueUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		796FECCA252684750062DB4A /* OverWatchLeague */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 796FECF5252684780062DB4A /* Build configuration list for PBXNativeTarget "OverWatchLeague" */;
+			buildPhases = (
+				796FECC7252684750062DB4A /* Sources */,
+				796FECC8252684750062DB4A /* Frameworks */,
+				796FECC9252684750062DB4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OverWatchLeague;
+			productName = OverWatchLeague;
+			productReference = 796FECCB252684750062DB4A /* OverWatchLeague.app */;
+			productType = "com.apple.product-type.application";
+		};
+		796FECE0252684780062DB4A /* OverWatchLeagueTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 796FECF8252684780062DB4A /* Build configuration list for PBXNativeTarget "OverWatchLeagueTests" */;
+			buildPhases = (
+				796FECDD252684780062DB4A /* Sources */,
+				796FECDE252684780062DB4A /* Frameworks */,
+				796FECDF252684780062DB4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				796FECE3252684780062DB4A /* PBXTargetDependency */,
+			);
+			name = OverWatchLeagueTests;
+			productName = OverWatchLeagueTests;
+			productReference = 796FECE1252684780062DB4A /* OverWatchLeagueTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		796FECEB252684780062DB4A /* OverWatchLeagueUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 796FECFB252684780062DB4A /* Build configuration list for PBXNativeTarget "OverWatchLeagueUITests" */;
+			buildPhases = (
+				796FECE8252684780062DB4A /* Sources */,
+				796FECE9252684780062DB4A /* Frameworks */,
+				796FECEA252684780062DB4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				796FECEE252684780062DB4A /* PBXTargetDependency */,
+			);
+			name = OverWatchLeagueUITests;
+			productName = OverWatchLeagueUITests;
+			productReference = 796FECEC252684780062DB4A /* OverWatchLeagueUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		796FECC3252684750062DB4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					796FECCA252684750062DB4A = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					796FECE0252684780062DB4A = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 796FECCA252684750062DB4A;
+					};
+					796FECEB252684780062DB4A = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 796FECCA252684750062DB4A;
+					};
+				};
+			};
+			buildConfigurationList = 796FECC6252684750062DB4A /* Build configuration list for PBXProject "OverWatchLeague" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 796FECC2252684750062DB4A;
+			productRefGroup = 796FECCC252684750062DB4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				796FECCA252684750062DB4A /* OverWatchLeague */,
+				796FECE0252684780062DB4A /* OverWatchLeagueTests */,
+				796FECEB252684780062DB4A /* OverWatchLeagueUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		796FECC9252684750062DB4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				796FECDB252684780062DB4A /* LaunchScreen.storyboard in Resources */,
+				796FECD8252684780062DB4A /* Assets.xcassets in Resources */,
+				796FECD6252684750062DB4A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		796FECDF252684780062DB4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		796FECEA252684780062DB4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		796FECC7252684750062DB4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				796FECD3252684750062DB4A /* ViewController.swift in Sources */,
+				796FECCF252684750062DB4A /* AppDelegate.swift in Sources */,
+				796FECD1252684750062DB4A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		796FECDD252684780062DB4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				796FECE6252684780062DB4A /* OverWatchLeagueTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		796FECE8252684780062DB4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				796FECF1252684780062DB4A /* OverWatchLeagueUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		796FECE3252684780062DB4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 796FECCA252684750062DB4A /* OverWatchLeague */;
+			targetProxy = 796FECE2252684780062DB4A /* PBXContainerItemProxy */;
+		};
+		796FECEE252684780062DB4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 796FECCA252684750062DB4A /* OverWatchLeague */;
+			targetProxy = 796FECED252684780062DB4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		796FECD4252684750062DB4A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				796FECD5252684750062DB4A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		796FECD9252684780062DB4A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				796FECDA252684780062DB4A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		796FECF3252684780062DB4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		796FECF4252684780062DB4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		796FECF6252684780062DB4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OverWatchLeague/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vitorpires.OverWatchLeague;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		796FECF7252684780062DB4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OverWatchLeague/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vitorpires.OverWatchLeague;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		796FECF9252684780062DB4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OverWatchLeagueTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vitorpires.OverWatchLeagueTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OverWatchLeague.app/OverWatchLeague";
+			};
+			name = Debug;
+		};
+		796FECFA252684780062DB4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OverWatchLeagueTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vitorpires.OverWatchLeagueTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OverWatchLeague.app/OverWatchLeague";
+			};
+			name = Release;
+		};
+		796FECFC252684780062DB4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OverWatchLeagueUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vitorpires.OverWatchLeagueUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OverWatchLeague;
+			};
+			name = Debug;
+		};
+		796FECFD252684780062DB4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OverWatchLeagueUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vitorpires.OverWatchLeagueUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OverWatchLeague;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		796FECC6252684750062DB4A /* Build configuration list for PBXProject "OverWatchLeague" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				796FECF3252684780062DB4A /* Debug */,
+				796FECF4252684780062DB4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		796FECF5252684780062DB4A /* Build configuration list for PBXNativeTarget "OverWatchLeague" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				796FECF6252684780062DB4A /* Debug */,
+				796FECF7252684780062DB4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		796FECF8252684780062DB4A /* Build configuration list for PBXNativeTarget "OverWatchLeagueTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				796FECF9252684780062DB4A /* Debug */,
+				796FECFA252684780062DB4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		796FECFB252684780062DB4A /* Build configuration list for PBXNativeTarget "OverWatchLeagueUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				796FECFC252684780062DB4A /* Debug */,
+				796FECFD252684780062DB4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 796FECC3252684750062DB4A /* Project object */;
+}
