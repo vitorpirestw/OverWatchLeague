@@ -3,18 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60CCDEE911B7864357FABC18 /* Pods_OverWatchLeague.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB949331F43F1F08EFE597CF /* Pods_OverWatchLeague.framework */; };
 		796FECCF252684750062DB4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796FECCE252684750062DB4A /* AppDelegate.swift */; };
 		796FECD1252684750062DB4A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796FECD0252684750062DB4A /* SceneDelegate.swift */; };
 		796FECD3252684750062DB4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796FECD2252684750062DB4A /* ViewController.swift */; };
-		796FECD6252684750062DB4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 796FECD4252684750062DB4A /* Main.storyboard */; };
 		796FECD8252684780062DB4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 796FECD7252684780062DB4A /* Assets.xcassets */; };
 		796FECDB252684780062DB4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 796FECD9252684780062DB4A /* LaunchScreen.storyboard */; };
 		796FECE6252684780062DB4A /* OverWatchLeagueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796FECE5252684780062DB4A /* OverWatchLeagueTests.swift */; };
 		796FECF1252684780062DB4A /* OverWatchLeagueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796FECF0252684780062DB4A /* OverWatchLeagueUITests.swift */; };
+		796FED052527A8CE0062DB4A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796FED042527A8CE0062DB4A /* TableViewCell.swift */; };
+		796FED0A2527AF470062DB4A /* TeamWire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796FED092527AF470062DB4A /* TeamWire.swift */; };
+		796FED0F2527AF730062DB4A /* TeamRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796FED0E2527AF730062DB4A /* TeamRepository.swift */; };
+		796FED142527B01D0062DB4A /* TeamInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796FED132527B01D0062DB4A /* TeamInteractor.swift */; };
+		796FED442527C6180062DB4A /* TeamsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796FED432527C6180062DB4A /* TeamsPresenter.swift */; };
+		BD47E84653B4BC9576B41044 /* Pods_OverWatchLeagueTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9306B1835BB61A5F2A412DBE /* Pods_OverWatchLeagueTests.framework */; };
+		ED2F7D6660D8A158CAEF0BE9 /* Pods_OverWatchLeague_OverWatchLeagueUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C49E56C10FF3560AD7F371 /* Pods_OverWatchLeague_OverWatchLeagueUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +42,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		154570E8E042109C9F5D955B /* Pods-OverWatchLeague.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OverWatchLeague.debug.xcconfig"; path = "Target Support Files/Pods-OverWatchLeague/Pods-OverWatchLeague.debug.xcconfig"; sourceTree = "<group>"; };
+		1D4E035C6F7F92829D68333A /* Pods-OverWatchLeague-OverWatchLeagueUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OverWatchLeague-OverWatchLeagueUITests.release.xcconfig"; path = "Target Support Files/Pods-OverWatchLeague-OverWatchLeagueUITests/Pods-OverWatchLeague-OverWatchLeagueUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4DCF3E40FB15435014957539 /* Pods-OverWatchLeagueTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OverWatchLeagueTests.release.xcconfig"; path = "Target Support Files/Pods-OverWatchLeagueTests/Pods-OverWatchLeagueTests.release.xcconfig"; sourceTree = "<group>"; };
+		51C49E56C10FF3560AD7F371 /* Pods_OverWatchLeague_OverWatchLeagueUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OverWatchLeague_OverWatchLeagueUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		796FECCB252684750062DB4A /* OverWatchLeague.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OverWatchLeague.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		796FECCE252684750062DB4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		796FECD0252684750062DB4A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		796FECD2252684750062DB4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		796FECD5252684750062DB4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		796FECD7252684780062DB4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		796FECDA252684780062DB4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		796FECDC252684780062DB4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +59,16 @@
 		796FECEC252684780062DB4A /* OverWatchLeagueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OverWatchLeagueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		796FECF0252684780062DB4A /* OverWatchLeagueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverWatchLeagueUITests.swift; sourceTree = "<group>"; };
 		796FECF2252684780062DB4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		796FED042527A8CE0062DB4A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		796FED092527AF470062DB4A /* TeamWire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamWire.swift; sourceTree = "<group>"; };
+		796FED0E2527AF730062DB4A /* TeamRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamRepository.swift; sourceTree = "<group>"; };
+		796FED132527B01D0062DB4A /* TeamInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamInteractor.swift; sourceTree = "<group>"; };
+		796FED432527C6180062DB4A /* TeamsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsPresenter.swift; sourceTree = "<group>"; };
+		8C064507FF63D14031678F4C /* Pods-OverWatchLeague.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OverWatchLeague.release.xcconfig"; path = "Target Support Files/Pods-OverWatchLeague/Pods-OverWatchLeague.release.xcconfig"; sourceTree = "<group>"; };
+		9306B1835BB61A5F2A412DBE /* Pods_OverWatchLeagueTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OverWatchLeagueTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB949331F43F1F08EFE597CF /* Pods_OverWatchLeague.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OverWatchLeague.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D69BB3440698FE8AD790615C /* Pods-OverWatchLeague-OverWatchLeagueUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OverWatchLeague-OverWatchLeagueUITests.debug.xcconfig"; path = "Target Support Files/Pods-OverWatchLeague-OverWatchLeagueUITests/Pods-OverWatchLeague-OverWatchLeagueUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DBF67F625CEB984BB0E141F1 /* Pods-OverWatchLeagueTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OverWatchLeagueTests.debug.xcconfig"; path = "Target Support Files/Pods-OverWatchLeagueTests/Pods-OverWatchLeagueTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60CCDEE911B7864357FABC18 /* Pods_OverWatchLeague.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD47E84653B4BC9576B41044 /* Pods_OverWatchLeagueTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED2F7D6660D8A158CAEF0BE9 /* Pods_OverWatchLeague_OverWatchLeagueUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +106,8 @@
 				796FECE4252684780062DB4A /* OverWatchLeagueTests */,
 				796FECEF252684780062DB4A /* OverWatchLeagueUITests */,
 				796FECCC252684750062DB4A /* Products */,
+				EEFA53B124001F3532F3F80E /* Pods */,
+				CCA33CFDF68A9BBC038B4F91 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,8 +126,7 @@
 			children = (
 				796FECCE252684750062DB4A /* AppDelegate.swift */,
 				796FECD0252684750062DB4A /* SceneDelegate.swift */,
-				796FECD2252684750062DB4A /* ViewController.swift */,
-				796FECD4252684750062DB4A /* Main.storyboard */,
+				796FED352527C0CF0062DB4A /* TeamsList */,
 				796FECD7252684780062DB4A /* Assets.xcassets */,
 				796FECD9252684780062DB4A /* LaunchScreen.storyboard */,
 				796FECDC252684780062DB4A /* Info.plist */,
@@ -128,6 +152,82 @@
 			path = OverWatchLeagueUITests;
 			sourceTree = "<group>";
 		};
+		796FED312527C0600062DB4A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				796FED092527AF470062DB4A /* TeamWire.swift */,
+				796FED0E2527AF730062DB4A /* TeamRepository.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		796FED322527C0720062DB4A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		796FED332527C0930062DB4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				796FED042527A8CE0062DB4A /* TableViewCell.swift */,
+				796FECD2252684750062DB4A /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		796FED342527C0B20062DB4A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				796FED132527B01D0062DB4A /* TeamInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		796FED352527C0CF0062DB4A /* TeamsList */ = {
+			isa = PBXGroup;
+			children = (
+				796FED332527C0930062DB4A /* View */,
+				796FED342527C0B20062DB4A /* Interactor */,
+				796FED362527C10A0062DB4A /* Presenter */,
+				796FED312527C0600062DB4A /* Entity */,
+				796FED322527C0720062DB4A /* Router */,
+			);
+			path = TeamsList;
+			sourceTree = "<group>";
+		};
+		796FED362527C10A0062DB4A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				796FED432527C6180062DB4A /* TeamsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CCA33CFDF68A9BBC038B4F91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB949331F43F1F08EFE597CF /* Pods_OverWatchLeague.framework */,
+				51C49E56C10FF3560AD7F371 /* Pods_OverWatchLeague_OverWatchLeagueUITests.framework */,
+				9306B1835BB61A5F2A412DBE /* Pods_OverWatchLeagueTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EEFA53B124001F3532F3F80E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				154570E8E042109C9F5D955B /* Pods-OverWatchLeague.debug.xcconfig */,
+				8C064507FF63D14031678F4C /* Pods-OverWatchLeague.release.xcconfig */,
+				D69BB3440698FE8AD790615C /* Pods-OverWatchLeague-OverWatchLeagueUITests.debug.xcconfig */,
+				1D4E035C6F7F92829D68333A /* Pods-OverWatchLeague-OverWatchLeagueUITests.release.xcconfig */,
+				DBF67F625CEB984BB0E141F1 /* Pods-OverWatchLeagueTests.debug.xcconfig */,
+				4DCF3E40FB15435014957539 /* Pods-OverWatchLeagueTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +235,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 796FECF5252684780062DB4A /* Build configuration list for PBXNativeTarget "OverWatchLeague" */;
 			buildPhases = (
+				B1D0167AF396076A8333F972 /* [CP] Check Pods Manifest.lock */,
 				796FECC7252684750062DB4A /* Sources */,
 				796FECC8252684750062DB4A /* Frameworks */,
 				796FECC9252684750062DB4A /* Resources */,
+				0D1C3F2C4EB4DCA8F9D29493 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +254,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 796FECF8252684780062DB4A /* Build configuration list for PBXNativeTarget "OverWatchLeagueTests" */;
 			buildPhases = (
+				97372DB9E4A5E0CB2112D5E1 /* [CP] Check Pods Manifest.lock */,
 				796FECDD252684780062DB4A /* Sources */,
 				796FECDE252684780062DB4A /* Frameworks */,
 				796FECDF252684780062DB4A /* Resources */,
@@ -170,9 +273,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 796FECFB252684780062DB4A /* Build configuration list for PBXNativeTarget "OverWatchLeagueUITests" */;
 			buildPhases = (
+				D26DF762C4DDB96F60A115EF /* [CP] Check Pods Manifest.lock */,
 				796FECE8252684780062DB4A /* Sources */,
 				796FECE9252684780062DB4A /* Frameworks */,
 				796FECEA252684780062DB4A /* Resources */,
+				6AE089530F47D3B1F02BD09F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,7 +338,6 @@
 			files = (
 				796FECDB252684780062DB4A /* LaunchScreen.storyboard in Resources */,
 				796FECD8252684780062DB4A /* Assets.xcassets in Resources */,
-				796FECD6252684750062DB4A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,13 +357,121 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D1C3F2C4EB4DCA8F9D29493 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OverWatchLeague/Pods-OverWatchLeague-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OverWatchLeague/Pods-OverWatchLeague-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OverWatchLeague/Pods-OverWatchLeague-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AE089530F47D3B1F02BD09F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OverWatchLeague-OverWatchLeagueUITests/Pods-OverWatchLeague-OverWatchLeagueUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OverWatchLeague-OverWatchLeagueUITests/Pods-OverWatchLeague-OverWatchLeagueUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OverWatchLeague-OverWatchLeagueUITests/Pods-OverWatchLeague-OverWatchLeagueUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97372DB9E4A5E0CB2112D5E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OverWatchLeagueTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1D0167AF396076A8333F972 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OverWatchLeague-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D26DF762C4DDB96F60A115EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OverWatchLeague-OverWatchLeagueUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		796FECC7252684750062DB4A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				796FECD3252684750062DB4A /* ViewController.swift in Sources */,
+				796FED442527C6180062DB4A /* TeamsPresenter.swift in Sources */,
+				796FED0A2527AF470062DB4A /* TeamWire.swift in Sources */,
+				796FED052527A8CE0062DB4A /* TableViewCell.swift in Sources */,
+				796FED142527B01D0062DB4A /* TeamInteractor.swift in Sources */,
 				796FECCF252684750062DB4A /* AppDelegate.swift in Sources */,
+				796FED0F2527AF730062DB4A /* TeamRepository.swift in Sources */,
 				796FECD1252684750062DB4A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,14 +508,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		796FECD4252684750062DB4A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				796FECD5252684750062DB4A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		796FECD9252684780062DB4A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -433,6 +637,7 @@
 		};
 		796FECF6252684780062DB4A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 154570E8E042109C9F5D955B /* Pods-OverWatchLeague.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -451,6 +656,7 @@
 		};
 		796FECF7252684780062DB4A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C064507FF63D14031678F4C /* Pods-OverWatchLeague.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -469,6 +675,7 @@
 		};
 		796FECF9252684780062DB4A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBF67F625CEB984BB0E141F1 /* Pods-OverWatchLeagueTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +697,7 @@
 		};
 		796FECFA252684780062DB4A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DCF3E40FB15435014957539 /* Pods-OverWatchLeagueTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +719,7 @@
 		};
 		796FECFC252684780062DB4A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D69BB3440698FE8AD790615C /* Pods-OverWatchLeague-OverWatchLeagueUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +739,7 @@
 		};
 		796FECFD252684780062DB4A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D4E035C6F7F92829D68333A /* Pods-OverWatchLeague-OverWatchLeagueUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
