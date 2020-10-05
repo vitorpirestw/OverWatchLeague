@@ -14,41 +14,41 @@ class ViewController: UIViewController {
     private var presenter = TeamsPresenter()
 
     private var logoOverwatch: UIImageView = {
-        let logo = UIImageView()
-        logo.translatesAutoresizingMaskIntoConstraints = false
-        return logo
+        let imageView = UIImageView()
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
     }()
 
     private let logo = UIImage(named: "logo")
     
     private let containerView: UIView = {
-        let container = UIView()
-        container.translatesAutoresizingMaskIntoConstraints = false
-        container.backgroundColor = UIColor(named: "BackgroundColor")
-        return container
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = UIColor(named: "BackgroundColor")
+        return view
     }()
 
     private let oneLineView: UIView = {
-        let container = UIView()
-        container.translatesAutoresizingMaskIntoConstraints = false
-        container.backgroundColor = .orange
-        return container
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .orange
+        return view
     }()
     
     private let viewImage: UIView = {
-        let container = UIView()
-        container.translatesAutoresizingMaskIntoConstraints = false
-        container.backgroundColor = .green
-        return container
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .green
+        return view
     }()
     
     private let titleLabel: UILabel = {
-        let title = UILabel()
-        title.text = "OVERWATCH TEAMS DATABASE"
-        title.textColor = .white
-        title.font = .boldSystemFont(ofSize: 16)
-        title.translatesAutoresizingMaskIntoConstraints = false
-        return title
+        let label = UILabel()
+        label.text = "OVERWATCH TEAMS DATABASE"
+        label.textColor = .white
+        label.font = .boldSystemFont(ofSize: 16)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
     }()
 
     private var stackView = UIStackView()
@@ -57,7 +57,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         presenter.updateView()
         addViews()
-        updateUI()
+
         updateTableView()
     }
 
@@ -77,10 +77,11 @@ class ViewController: UIViewController {
         containerView.addSubview(stackView)
         containerView.addSubview(oneLineView)
         containerView.addSubview(tableView)
+
+        updateConstraint()
     }
 
-    func updateUI() {
-
+    func updateConstraint() {
 
         NSLayoutConstraint.activate([
             containerView.topAnchor.constraint(equalTo: view.topAnchor),
@@ -133,7 +134,6 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         } else {
             print("no image")
         }
-
         return cell
     }
 

@@ -3,52 +3,52 @@ import UIKit
 class TableViewCell : UITableViewCell {
 
     let nomeLabel: UILabel = {
-        let nlbl = UILabel()
-        nlbl.textColor = .white
-        nlbl.font = .boldSystemFont(ofSize: 18)
-        nlbl.translatesAutoresizingMaskIntoConstraints = false
-        return nlbl
+        let label = UILabel()
+        label.textColor = .white
+        label.font = .boldSystemFont(ofSize: 18)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
     }()
 
 
     let apelidoLabel: UILabel = {
-        let albl = UILabel()
-        albl.translatesAutoresizingMaskIntoConstraints = false
-        albl.textColor = .white
-        albl.font = .boldSystemFont(ofSize: 14)
-        albl.translatesAutoresizingMaskIntoConstraints = false
-        return albl
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .white
+        label.font = .boldSystemFont(ofSize: 14)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
     }()
 
     let locationLabel: UILabel = {
-        let llbl = UILabel()
-        llbl.translatesAutoresizingMaskIntoConstraints = false
-        llbl.textColor = .white
-        llbl.font = .boldSystemFont(ofSize: 14)
-        llbl.translatesAutoresizingMaskIntoConstraints = false
-        return llbl
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .white
+        label.font = .boldSystemFont(ofSize: 14)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
     }()
 
     let logoImage: UIImageView = {
-        let llbl = UIImageView()
-        llbl.backgroundColor = .white
-        llbl.translatesAutoresizingMaskIntoConstraints = false
-        return llbl
+        let imageView = UIImageView()
+        imageView.backgroundColor = .white
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
     }()
 
     let logoViewImage: UIView = {
-        let container = UIView()
-        container.translatesAutoresizingMaskIntoConstraints = false
-        return container
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
     }()
 
     var stackView = UIStackView()
+
     var stackViewHorizontal = UIStackView()
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: "cell")
         addViews()
-        setupLayout()
         backgroundColor = UIColor(named: "cellBackgroundColor")
     }
 
@@ -58,23 +58,25 @@ class TableViewCell : UITableViewCell {
         stackViewHorizontal = UIStackView(arrangedSubviews: [stackView,logoViewImage])
         addSubview(stackView)
         addSubview(stackViewHorizontal)
+
+        updateConstraint()
     }
 
-    func setupLayout() {
+    func updateConstraint() {
 
-        stackViewHorizontal.axis = .horizontal
-        stackViewHorizontal.topAnchor.constraint(equalTo:  topAnchor, constant: 12).isActive = true
-        stackViewHorizontal.spacing = 6
-        stackViewHorizontal.translatesAutoresizingMaskIntoConstraints = false
-
+        stackView.axis = .vertical
         stackView.spacing = 6
-        stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.distribution = .fill
         stackView.alignment = .fill
-        stackView.axis = .vertical
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+
+        stackViewHorizontal.axis = .horizontal
+        stackViewHorizontal.spacing = 16
+        stackViewHorizontal.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
             stackViewHorizontal.trailingAnchor.constraint(equalTo:  trailingAnchor, constant: -20),
+            stackViewHorizontal.topAnchor.constraint(equalTo:  topAnchor, constant: 12),
             stackView.topAnchor.constraint(equalTo:  topAnchor, constant: 12),
             stackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
             logoViewImage.heightAnchor.constraint(equalToConstant: 60),
