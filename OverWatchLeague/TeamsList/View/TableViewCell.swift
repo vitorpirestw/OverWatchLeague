@@ -2,7 +2,7 @@ import UIKit
 
 class TableViewCell : UITableViewCell {
 
-    var nomeLabel: UILabel = {
+    let nomeLabel: UILabel = {
         let nlbl = UILabel()
         nlbl.textColor = .white
         nlbl.font = .boldSystemFont(ofSize: 18)
@@ -11,7 +11,7 @@ class TableViewCell : UITableViewCell {
     }()
 
 
-    var apelidoLabel: UILabel = {
+    let apelidoLabel: UILabel = {
         let albl = UILabel()
         albl.translatesAutoresizingMaskIntoConstraints = false
         albl.textColor = .white
@@ -20,7 +20,7 @@ class TableViewCell : UITableViewCell {
         return albl
     }()
 
-    var locationLabel: UILabel = {
+    let locationLabel: UILabel = {
         let llbl = UILabel()
         llbl.translatesAutoresizingMaskIntoConstraints = false
         llbl.textColor = .white
@@ -29,7 +29,7 @@ class TableViewCell : UITableViewCell {
         return llbl
     }()
 
-    var logoImage: UIImageView = {
+    let logoImage: UIImageView = {
         let llbl = UIImageView()
         llbl.backgroundColor = .white
         llbl.translatesAutoresizingMaskIntoConstraints = false
@@ -42,38 +42,46 @@ class TableViewCell : UITableViewCell {
         return container
     }()
 
+    var stackView = UIStackView()
+    var stackViewHorizontal = UIStackView()
+
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: "cell")
+        addViews()
         setupLayout()
         backgroundColor = UIColor(named: "cellBackgroundColor")
     }
 
+    private func addViews() {
+        logoViewImage.addSubview(logoImage)
+        stackView = UIStackView(arrangedSubviews: [nomeLabel, apelidoLabel,locationLabel])
+        stackViewHorizontal = UIStackView(arrangedSubviews: [stackView,logoViewImage])
+        addSubview(stackView)
+        addSubview(stackViewHorizontal)
+    }
+
     func setupLayout() {
 
-        logoViewImage.addSubview(logoImage)
-        let stackView = UIStackView(arrangedSubviews: [nomeLabel, apelidoLabel,locationLabel])
-        let stackViewHorizontal = UIStackView(arrangedSubviews: [stackView,logoViewImage])
         stackViewHorizontal.axis = .horizontal
-
-        addSubview(stackViewHorizontal)
         stackViewHorizontal.topAnchor.constraint(equalTo:  topAnchor, constant: 12).isActive = true
         stackViewHorizontal.spacing = 6
         stackViewHorizontal.translatesAutoresizingMaskIntoConstraints = false
-        stackViewHorizontal.trailingAnchor.constraint(equalTo:  trailingAnchor, constant: -20).isActive = true
 
-        addSubview(stackView)
         stackView.spacing = 6
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.distribution = .fill
         stackView.alignment = .fill
         stackView.axis = .vertical
-        stackView.topAnchor.constraint(equalTo:  topAnchor, constant: 12).isActive = true
-        stackView.leadingAnchor.constraint(equalTo:  leadingAnchor, constant: 20).isActive = true
 
-        logoViewImage.heightAnchor.constraint(equalToConstant: 60).isActive = true
-        logoViewImage.widthAnchor.constraint(equalToConstant: 60).isActive = true
-        logoImage.heightAnchor.constraint(equalTo: logoViewImage.heightAnchor).isActive = true
-        logoImage.widthAnchor.constraint(equalTo: logoViewImage.widthAnchor).isActive = true
+        NSLayoutConstraint.activate([
+            stackViewHorizontal.trailingAnchor.constraint(equalTo:  trailingAnchor, constant: -20),
+            stackView.topAnchor.constraint(equalTo:  topAnchor, constant: 12),
+            stackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
+            logoViewImage.heightAnchor.constraint(equalToConstant: 60),
+            logoViewImage.widthAnchor.constraint(equalToConstant: 60),
+            logoImage.heightAnchor.constraint(equalTo: logoViewImage.heightAnchor),
+            logoImage.widthAnchor.constraint(equalTo: logoViewImage.widthAnchor),
+        ])
     }
 
     required init?(coder: NSCoder) {

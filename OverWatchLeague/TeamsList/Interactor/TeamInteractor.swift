@@ -14,8 +14,8 @@ protocol InteractorDelegate {
 
 class TeamInteractor {
 
-    var interactorDelegate: InteractorDelegate?
-    let baseURL = "https://api.overwatchleague.com/v2/teams"
+     var interactorDelegate: InteractorDelegate?
+     let baseURL = "https://api.overwatchleague.com/v2/teams"
 
     func getTeams() {
 
