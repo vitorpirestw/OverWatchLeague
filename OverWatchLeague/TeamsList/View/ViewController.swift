@@ -10,14 +10,23 @@ import UIKit
 class ViewController: UIViewController {
 
     var presenter = TeamsPresenter()
-    lazy var teamList = TeamListView()
+    private lazy var teamList = TeamListView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view = teamList
+        setupNavBar()
         teamList.setupViews()
-        teamList.setupNavBar(vc: self)
         teamList.updateTableView()
     }
-}
 
+    func setupNavBar() {
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+        imageView.contentMode = .scaleAspectFill
+        let image = UIImage(named: "Overwatch-Symbol")
+        imageView.image = image
+        navigationItem.titleView = imageView
+        navigationController?.navigationBar.isTranslucent = true
+        navigationController?.navigationBar.barStyle = .black
+    }
+}
