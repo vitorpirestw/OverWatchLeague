@@ -20,6 +20,7 @@
 		796FED0F2527AF730062DB4A /* TeamRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796FED0E2527AF730062DB4A /* TeamRepository.swift */; };
 		796FED142527B01D0062DB4A /* TeamInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796FED132527B01D0062DB4A /* TeamInteractor.swift */; };
 		796FED442527C6180062DB4A /* TeamsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796FED432527C6180062DB4A /* TeamsPresenter.swift */; };
+		79E63DEF252E25D400A54893 /* TeamListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E63DEE252E25D400A54893 /* TeamListView.swift */; };
 		BD47E84653B4BC9576B41044 /* Pods_OverWatchLeagueTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9306B1835BB61A5F2A412DBE /* Pods_OverWatchLeagueTests.framework */; };
 		ED2F7D6660D8A158CAEF0BE9 /* Pods_OverWatchLeague_OverWatchLeagueUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C49E56C10FF3560AD7F371 /* Pods_OverWatchLeague_OverWatchLeagueUITests.framework */; };
 /* End PBXBuildFile section */
@@ -64,6 +65,7 @@
 		796FED0E2527AF730062DB4A /* TeamRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamRepository.swift; sourceTree = "<group>"; };
 		796FED132527B01D0062DB4A /* TeamInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamInteractor.swift; sourceTree = "<group>"; };
 		796FED432527C6180062DB4A /* TeamsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsPresenter.swift; sourceTree = "<group>"; };
+		79E63DEE252E25D400A54893 /* TeamListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListView.swift; sourceTree = "<group>"; };
 		8C064507FF63D14031678F4C /* Pods-OverWatchLeague.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OverWatchLeague.release.xcconfig"; path = "Target Support Files/Pods-OverWatchLeague/Pods-OverWatchLeague.release.xcconfig"; sourceTree = "<group>"; };
 		9306B1835BB61A5F2A412DBE /* Pods_OverWatchLeagueTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OverWatchLeagueTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB949331F43F1F08EFE597CF /* Pods_OverWatchLeague.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OverWatchLeague.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,6 +175,7 @@
 			children = (
 				796FED042527A8CE0062DB4A /* TableViewCell.swift */,
 				796FECD2252684750062DB4A /* ViewController.swift */,
+				79E63DEE252E25D400A54893 /* TeamListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -469,6 +472,7 @@
 				796FED442527C6180062DB4A /* TeamsPresenter.swift in Sources */,
 				796FED0A2527AF470062DB4A /* TeamWire.swift in Sources */,
 				796FED052527A8CE0062DB4A /* TableViewCell.swift in Sources */,
+				79E63DEF252E25D400A54893 /* TeamListView.swift in Sources */,
 				796FED142527B01D0062DB4A /* TeamInteractor.swift in Sources */,
 				796FECCF252684750062DB4A /* AppDelegate.swift in Sources */,
 				796FED0F2527AF730062DB4A /* TeamRepository.swift in Sources */,
