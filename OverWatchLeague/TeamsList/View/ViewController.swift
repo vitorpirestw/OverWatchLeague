@@ -10,17 +10,19 @@ import EzImageLoader
 
 class ViewController: UIViewController {
 
-    private let tableView = UITableView()
     private var presenter = TeamsPresenter()
 
-    private var logoOverwatch: UIImageView = {
-        let imageView = UIImageView()
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        return imageView
+    private lazy var tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.register(TableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.allowsSelection = false
+        return tableView
     }()
 
-    private let logo = UIImage(named: "logo")
-    
+
     private let containerView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -28,20 +30,6 @@ class ViewController: UIViewController {
         return view
     }()
 
-    private let oneLineView: UIView = {
-        let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .orange
-        return view
-    }()
-    
-    private let viewImage: UIView = {
-        let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .green
-        return view
-    }()
-    
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.text = "OVERWATCH TEAMS DATABASE"
@@ -51,14 +39,12 @@ class ViewController: UIViewController {
         return label
     }()
 
-    private var stackView = UIStackView()
-
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.updateView()
-        addViews()
-
+        setupViews()
         updateTableView()
+        setupNavBar()
     }
 
     func updateTableView() {
@@ -69,50 +55,34 @@ class ViewController: UIViewController {
         }
     }
 
-    private func addViews() {
-        view.addSubview(containerView)
-        logoOverwatch = UIImageView(image: logo)
-        viewImage.addSubview(logoOverwatch)
-        stackView = UIStackView(arrangedSubviews: [viewImage, titleLabel])
-        containerView.addSubview(stackView)
-        containerView.addSubview(oneLineView)
-        containerView.addSubview(tableView)
+    func setupNavBar() {
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+        imageView.contentMode = .scaleAspectFill
+        let image = UIImage(named: "Overwatch-Symbol")
+        imageView.image = image
+        navigationItem.titleView = imageView
+        navigationController?.navigationBar.isTranslucent = true
+        navigationController?.navigationBar.barStyle = .black
+    }
 
+    private func setupViews() {
+        view.addSubview(containerView)
+        containerView.addSubview(tableView)
         updateConstraint()
     }
 
     func updateConstraint() {
-
         NSLayoutConstraint.activate([
             containerView.topAnchor.constraint(equalTo: view.topAnchor),
             containerView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             containerView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             containerView.heightAnchor.constraint(equalTo: view.heightAnchor),
-            logoOverwatch.topAnchor.constraint(equalTo: viewImage.topAnchor),
-            logoOverwatch.trailingAnchor.constraint(equalTo: viewImage.trailingAnchor),
-            stackView.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 40),
-            stackView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 20),
-            titleLabel.topAnchor.constraint(equalTo: viewImage.topAnchor, constant: 55),
-            oneLineView.topAnchor.constraint(equalTo: stackView.bottomAnchor, constant: 20),
-            oneLineView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 20),
-            oneLineView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -20),
-            oneLineView.heightAnchor.constraint(equalToConstant: 10),
-            tableView.topAnchor.constraint(equalTo: oneLineView.bottomAnchor, constant: 20),
+
+            tableView.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 80),
             tableView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -20),
             tableView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 20),
-            tableView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor)
+            tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 20)
         ])
-
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.axis = .horizontal
-        stackView.alignment = .bottom
-        stackView.distribution = .fill
-        stackView.spacing = 8
-
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.register(TableViewCell.self, forCellReuseIdentifier: "cell")
-        tableView.dataSource = self
-        tableView.delegate = self
     }
 }
 

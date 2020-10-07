@@ -48,11 +48,12 @@ class TableViewCell : UITableViewCell {
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: "cell")
-        addViews()
+        setupViews()
         backgroundColor = UIColor(named: "cellBackgroundColor")
+        
     }
 
-    private func addViews() {
+    private func setupViews() {
         logoViewImage.addSubview(logoImage)
         stackView = UIStackView(arrangedSubviews: [nomeLabel, apelidoLabel,locationLabel])
         stackViewHorizontal = UIStackView(arrangedSubviews: [stackView,logoViewImage])
