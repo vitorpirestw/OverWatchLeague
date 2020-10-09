@@ -1,9 +1,21 @@
 import UIKit
 import EzImageLoader
 
+// MARK: - PROTOCOLS
+
+protocol TeamListViewDelegate {
+    func updateView()
+    func getcellPresenter( at indexPath: IndexPath ) -> TeamWire
+    func updateTableView(tableView: UITableView)
+    var numberOfCells: Int { get }
+    var cellHeight: Int { get }
+}
+
 final class TeamListView: UIView {
 
-    lazy var teamListViewPresenter = ViewController().presenter
+    // MARK: - PROPERTIES
+
+    var teamListViewDelegate: TeamListViewDelegate?
 
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
@@ -23,19 +35,14 @@ final class TeamListView: UIView {
         return view
     }()
 
+    // MARK: - METHODS
+
     func setupViews() {
         addSubview(containerView)
         containerView.addSubview(tableView)
-        teamListViewPresenter.updateView()
+        teamListViewDelegate?.updateView()
         updateConstraint()
-    }
-
-    func updateTableView() {
-        teamListViewPresenter.reloadTableViewClosure = { [weak self] () in
-            DispatchQueue.main.async {
-                self?.tableView.reloadData()
-            }
-        }
+        teamListViewDelegate?.updateTableView(tableView: tableView)
     }
 
     func updateConstraint() {
@@ -51,23 +58,34 @@ final class TeamListView: UIView {
             tableView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: 20)
         ])
     }
+
+    private func animateImage(image: UIImageView) {
+        image.alpha = 0
+        UIView.animate(withDuration: 1.0, delay: 0.0, options: [ .curveLinear], animations: {
+            image.transform = CGAffineTransform.init(scaleX: 1.2, y: 1.2)
+            image.alpha = 1
+        }, completion: nil)
+    }
 }
 
-extension TeamListView: UITableViewDataSource, UITableViewDelegate {
+// MARK: - EXTENSIONS
+
+extension TeamListView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return teamListViewPresenter.numberOfCells
+        return teamListViewDelegate!.numberOfCells
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
 
-        let team = teamListViewPresenter.getcellPresenter(at: indexPath)
+        let team = teamListViewDelegate!.getcellPresenter(at: indexPath)
         cell.nomeLabel.text = team.name.uppercased()
         cell.apelidoLabel.text = team.abbreviatedName.uppercased()
         cell.locationLabel.text = team.location.uppercased()
 
         if let urlString = team.logo.main.png{
             ImageLoader.get(urlString) {cell.logoImage.image = $0.image}
+            animateImage(image: cell.logoImage)
         } else {
             print("no image")
         }
@@ -75,6 +93,8 @@ extension TeamListView: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return CGFloat(teamListViewPresenter.cellHeight)
+        return CGFloat(teamListViewDelegate!.cellHeight)
     }
 }
+
+extension TeamListView: UITableViewDelegate {}

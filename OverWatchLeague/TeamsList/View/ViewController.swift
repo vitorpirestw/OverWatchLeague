@@ -9,15 +9,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var presenter = TeamsPresenter()
+    var presenter = TeamPresenter()
     private lazy var teamList = TeamListView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view = teamList
+        teamList.teamListViewDelegate = self
         setupNavBar()
         teamList.setupViews()
-        teamList.updateTableView()
     }
 
     func setupNavBar() {
@@ -28,5 +28,33 @@ class ViewController: UIViewController {
         navigationItem.titleView = imageView
         navigationController?.navigationBar.isTranslucent = true
         navigationController?.navigationBar.barStyle = .black
+    }
+}
+
+// MARK: - EXTENSIONS
+
+extension ViewController: TeamListViewDelegate {
+    func updateTableView(tableView: UITableView) {
+        presenter.reloadTableViewClosure = { () in
+            DispatchQueue.main.async {
+                tableView.reloadData()
+            }
+        }
+    }
+
+    func updateView() {
+        presenter.updateView()
+    }
+
+    func getcellPresenter(at indexPath: IndexPath) -> TeamWire {
+        presenter.getcellPresenter(at: indexPath)
+    }
+
+    var numberOfCells: Int {
+        return presenter.numberOfCells
+    }
+
+    var cellHeight: Int {
+        return presenter.cellHeight
     }
 }

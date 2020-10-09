@@ -92,7 +92,7 @@
 		103656D0EA8213CBFB52B3426F5CBCEC /* webp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = webp.m; path = sources/webp.m; sourceTree = "<group>"; };
 		1334437459DCCBEC2222525B11984984 /* EzImageLoader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EzImageLoader-dummy.m"; sourceTree = "<group>"; };
 		1F3BB38BD5622081AEB07FF451ED4388 /* EzImageLoader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EzImageLoader.modulemap; sourceTree = "<group>"; };
-		216C0FC0E3410808E3834CB7B83FC8F9 /* Pods_OverWatchLeague.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OverWatchLeague.framework; path = "Pods-OverWatchLeague.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		216C0FC0E3410808E3834CB7B83FC8F9 /* Pods_OverWatchLeague.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OverWatchLeague.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22D47CF23E1EE30FBA84DD22496FA787 /* Pods-OverWatchLeague.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OverWatchLeague.modulemap"; sourceTree = "<group>"; };
 		26EB6B93F88D34D9C8EFC7EE82F6DEFE /* Pods-OverWatchLeague-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OverWatchLeague-dummy.m"; sourceTree = "<group>"; };
 		2800FF29D24C4B81D78DAFC5A22F062C /* WebPDecoder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebPDecoder.framework; path = frameworks/WebPDecoder.framework; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 		3857B7015F59487090B2967F5D9A4D41 /* misc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = misc.swift; path = sources/misc.swift; sourceTree = "<group>"; };
 		398D578520C690CDFF58CE84129E72FF /* EzHTTP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EzHTTP.debug.xcconfig; sourceTree = "<group>"; };
 		40619BC55320F6D53EB3257D438DB2E3 /* webp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = webp.h; path = sources/webp.h; sourceTree = "<group>"; };
-		4A8ED922D35B41103F3ED75BFC1D37C0 /* EzImageLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EzImageLoader.framework; path = EzImageLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A8ED922D35B41103F3ED75BFC1D37C0 /* EzImageLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EzImageLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B51F1051AC5EDE71E793EF886D8383 /* UIImageView+ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+ext.swift"; path = "sources/UIImageView+ext.swift"; sourceTree = "<group>"; };
 		584BFCDEDC61EE623065D55EA2639F77 /* Pods-OverWatchLeagueTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OverWatchLeagueTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5EF70331AF22280AC5B3F8B60E9A14AF /* Pods-OverWatchLeague-OverWatchLeagueUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OverWatchLeague-OverWatchLeagueUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -123,15 +123,15 @@
 		7EABD093DBB343B3228D3B241A78E1DD /* Pods-OverWatchLeague.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OverWatchLeague.release.xcconfig"; sourceTree = "<group>"; };
 		858DDEF01328D70C77DF35BF5EBF7E6A /* NetworkIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkIndicator.swift; path = Sources/EzHTTP/NetworkIndicator.swift; sourceTree = "<group>"; };
 		95DCBCFE7B97162AB7E1F1B23034AF6F /* EzImageLoader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EzImageLoader-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E9CF9D707146EC259B7727531181BC7 /* Pods-OverWatchLeague-OverWatchLeagueUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OverWatchLeague-OverWatchLeagueUITests-umbrella.h"; sourceTree = "<group>"; };
 		A6507A9249B048E7BBC415F2A55D0894 /* EzHTTP-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EzHTTP-umbrella.h"; sourceTree = "<group>"; };
 		A984A205CC3A0540E63B60C4442C8B30 /* WebPDemux.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebPDemux.framework; path = frameworks/WebPDemux.framework; sourceTree = "<group>"; };
 		AAC3A908DDAA8A83F901B4C6B719333B /* Pods-OverWatchLeague-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OverWatchLeague-Info.plist"; sourceTree = "<group>"; };
 		AB5B5E67772DF36EED93A721501255AD /* Pods-OverWatchLeague-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OverWatchLeague-acknowledgements.plist"; sourceTree = "<group>"; };
-		B4F0E68B07CDE0DACFB3188915386035 /* Pods_OverWatchLeague_OverWatchLeagueUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OverWatchLeague_OverWatchLeagueUITests.framework; path = "Pods-OverWatchLeague-OverWatchLeagueUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4F0E68B07CDE0DACFB3188915386035 /* Pods_OverWatchLeague_OverWatchLeagueUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OverWatchLeague_OverWatchLeagueUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9942BB684448D57E7C259AEB95049AE /* EzHTTP-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EzHTTP-dummy.m"; sourceTree = "<group>"; };
-		BC1FF2250CFACF1D55B3F0FC4A829855 /* EzHTTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EzHTTP.framework; path = EzHTTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC1FF2250CFACF1D55B3F0FC4A829855 /* EzHTTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EzHTTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDB0A497EA968D693869299CC5E70187 /* EzHTTP.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EzHTTP.swift; path = Sources/EzHTTP/EzHTTP.swift; sourceTree = "<group>"; };
 		C0BF4D3A513487A1D626275870301AB2 /* EzHTTP-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EzHTTP-prefix.pch"; sourceTree = "<group>"; };
 		CD076F76CC482E5A5342114FA4CA6911 /* EzImageLoader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EzImageLoader.debug.xcconfig; sourceTree = "<group>"; };
@@ -140,7 +140,7 @@
 		D5C946C690AAB0C6EF432E1FF272590E /* EzImageLoader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EzImageLoader-prefix.pch"; sourceTree = "<group>"; };
 		D7B231798AEC5E3A3E2530C1E9FCBB1C /* SockHTTPOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SockHTTPOperation.swift; path = Sources/EzHTTP/SockHTTPOperation.swift; sourceTree = "<group>"; };
 		DC353E8F38E62D4FB6FB2D7708F16819 /* EzImageLoader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EzImageLoader.release.xcconfig; sourceTree = "<group>"; };
-		E701739910AA8C834CF51713C04E9523 /* Pods_OverWatchLeagueTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OverWatchLeagueTests.framework; path = "Pods-OverWatchLeagueTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E701739910AA8C834CF51713C04E9523 /* Pods_OverWatchLeagueTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OverWatchLeagueTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E827A442C08DEBFADEA27EE494F57226 /* Pods-OverWatchLeagueTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OverWatchLeagueTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		EFD5834FA3FC773DA4AB3BA44F16E89A /* Pods-OverWatchLeague-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OverWatchLeague-frameworks.sh"; sourceTree = "<group>"; };
 		F0BBD16DA18375F7E686A09A65F3E8CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -281,7 +281,6 @@
 				208167FC615EE98161C4EA3460BCB93E /* Frameworks */,
 				431263AF38D879062AE1FDF7D74A06D2 /* Support Files */,
 			);
-			name = EzImageLoader;
 			path = EzImageLoader;
 			sourceTree = "<group>";
 		};
@@ -295,7 +294,6 @@
 				D7B231798AEC5E3A3E2530C1E9FCBB1C /* SockHTTPOperation.swift */,
 				D3A678D7FD7F117B0A82493D8A07FE4F /* Support Files */,
 			);
-			name = EzHTTP;
 			path = EzHTTP;
 			sourceTree = "<group>";
 		};
@@ -522,7 +520,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1200;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 9.3";
@@ -693,7 +691,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-OverWatchLeagueTests/Pods-OverWatchLeagueTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -731,7 +729,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/EzHTTP/EzHTTP-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/EzHTTP/EzHTTP-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -766,7 +764,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/EzHTTP/EzHTTP-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/EzHTTP/EzHTTP-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -802,7 +800,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-OverWatchLeague-OverWatchLeagueUITests/Pods-OverWatchLeague-OverWatchLeagueUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -840,7 +838,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/EzImageLoader/EzImageLoader-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/EzImageLoader/EzImageLoader-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -875,7 +873,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-OverWatchLeague/Pods-OverWatchLeague-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -913,7 +911,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-OverWatchLeague/Pods-OverWatchLeague-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -950,7 +948,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-OverWatchLeague-OverWatchLeagueUITests/Pods-OverWatchLeague-OverWatchLeagueUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -997,6 +995,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1019,7 +1018,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1057,6 +1056,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1082,7 +1082,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1111,7 +1111,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-OverWatchLeagueTests/Pods-OverWatchLeagueTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1148,7 +1148,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/EzImageLoader/EzImageLoader-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/EzImageLoader/EzImageLoader-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

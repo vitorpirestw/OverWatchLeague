@@ -7,7 +7,7 @@
 
 import Foundation
 
-class TeamsPresenter {
+class TeamPresenter {
 
     var interactor = TeamInteractor()
     var reloadTableViewClosure: (()->())?
@@ -35,7 +35,7 @@ class TeamsPresenter {
     }
 }
 
-extension TeamsPresenter: InteractorDelegate {
+extension TeamPresenter: InteractorDelegate {
     func didUpdateTeamList(team: [TeamWire]) {
         cellPresenter = team
     }

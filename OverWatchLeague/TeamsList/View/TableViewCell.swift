@@ -2,10 +2,14 @@ import UIKit
 
 class TableViewCell : UITableViewCell {
 
+
+    // MARK: - PROPERTIES
+
     let nomeLabel: UILabel = {
         let label = UILabel()
         label.textColor = .white
         label.font = .boldSystemFont(ofSize: 18)
+        label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -42,9 +46,8 @@ class TableViewCell : UITableViewCell {
         return view
     }()
 
-    var stackView = UIStackView()
-
-    var stackViewHorizontal = UIStackView()
+    private var stackView = UIStackView()
+    private var stackViewHorizontal = UIStackView()
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: "cell")
@@ -53,35 +56,45 @@ class TableViewCell : UITableViewCell {
         
     }
 
+    // MARK: - METHODS
     private func setupViews() {
-        logoViewImage.addSubview(logoImage)
         stackView = UIStackView(arrangedSubviews: [nomeLabel, apelidoLabel,locationLabel])
         stackViewHorizontal = UIStackView(arrangedSubviews: [stackView,logoViewImage])
-        addSubview(stackView)
+
+        logoViewImage.addSubview(logoImage)
         addSubview(stackViewHorizontal)
+        addSubview(stackView)
 
         updateConstraint()
     }
 
-    func updateConstraint() {
-
+    private func updateConstraint() {
         stackView.axis = .vertical
-        stackView.spacing = 6
-        stackView.distribution = .fill
+        stackView.spacing = 0
+        stackView.distribution = .equalSpacing
         stackView.alignment = .fill
         stackView.translatesAutoresizingMaskIntoConstraints = false
 
         stackViewHorizontal.axis = .horizontal
-        stackViewHorizontal.spacing = 16
+        stackViewHorizontal.distribution = .fill
+        stackViewHorizontal.alignment = .fill
+        stackViewHorizontal.spacing = 0
         stackViewHorizontal.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
             stackViewHorizontal.trailingAnchor.constraint(equalTo:  trailingAnchor, constant: -20),
             stackViewHorizontal.topAnchor.constraint(equalTo:  topAnchor, constant: 12),
-            stackView.topAnchor.constraint(equalTo:  topAnchor, constant: 12),
+
+            stackView.topAnchor.constraint(equalTo:  topAnchor, constant: 8),
             stackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
-            logoViewImage.heightAnchor.constraint(equalToConstant: 60),
-            logoViewImage.widthAnchor.constraint(equalToConstant: 60),
+            stackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -80),
+            stackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -12),
+
+            logoViewImage.heightAnchor.constraint(equalToConstant: 50),
+            logoViewImage.widthAnchor.constraint(equalToConstant: 50),
+            logoViewImage.bottomAnchor.constraint(equalTo: stackViewHorizontal.bottomAnchor),
+            logoViewImage.topAnchor.constraint(equalTo:  stackViewHorizontal.topAnchor, constant: 12),
+
             logoImage.heightAnchor.constraint(equalTo: logoViewImage.heightAnchor),
             logoImage.widthAnchor.constraint(equalTo: logoViewImage.widthAnchor),
         ])
